@@ -1,4 +1,3 @@
-import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
 import java.io.FileInputStream
 import java.util.Properties
 
@@ -23,7 +22,7 @@ android {
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders["GOOGLE_MAP_API"] = properties["GOOGLE_MAP_API"] as String
+        buildConfigField("String", "DUST_API_KEY", properties["DUST_API_KEY"].toString())
     }
 
     buildTypes {
@@ -69,8 +68,4 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-}
-
-fun getProperty(key: String): String {
-    return gradleLocalProperties(rootDir, providers).getProperty(key)
 }
