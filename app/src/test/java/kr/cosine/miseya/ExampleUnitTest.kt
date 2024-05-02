@@ -1,4 +1,4 @@
-package kr.cosine.map
+package kr.cosine.miseya
 
 import org.junit.Test
 

@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Map"
+rootProject.name = "Miseya"
 include(":app")
  
