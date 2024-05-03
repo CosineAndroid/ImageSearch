@@ -1,29 +1,9 @@
 <resources>
-    <string name="app_name">Miseya</string>
-    <array name="sido">
-        <item>전국</item>
-        <item>서울</item>
-        <item>부산</item>
-        <item>대구</item>
-        <item>인천</item>
-        <item>광주</item>
-        <item>대전</item>
-        <item>울산</item>
-        <item>경기</item>
-        <item>강원</item>
-        <item>충북</item>
-        <item>충남</item>
-        <item>전북</item>
-        <item>전남</item>
-        <item>경북</item>
-        <item>경남</item>
-        <item>제주</item>
-        <item>세종</item>
-    </array>
-    <string name="location_format">%s %s</string>
-    <string name="dust_value_format">%s ㎍ / ㎥</string>
-    <string name="default_dust_value">- ㎍ / ㎥</string>
-    <string name="default_location_description">도시를 선택해주세요.</string>
-    <string name="station_spinner_title">지역 선택</string>
-    <string name="sido_spinner_title">도시 선택</string>
+    <string name="app_name">ImageSearch</string>
+    <string name="search_bar_hint">검색할 단어를 입력해주세요.</string>
+    <string name="search_button_title">검색</string>
+    <string name="search_tab_item_title">이미지 검색</string>
+    <string name="bookmark_tab_item_title">내 보관함</string>
+    <string name="default_site_title">사이트</string>
+    <string name="default_date_time_title">시간</string>
 </resources>

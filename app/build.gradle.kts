@@ -12,17 +12,17 @@ val properties = Properties().apply {
 }
 
 android {
-    namespace = "kr.cosine.miseya"
+    namespace = "kr.cosine.imagesearch"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "kr.cosine.miseya"
+        applicationId = "kr.cosine.imagesearch"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "DUST_API_KEY", properties["DUST_API_KEY"].toString())
+        buildConfigField("String", "KAKAO_API_KEY", properties["KAKAO_API_KEY"].toString())
     }
 
     buildTypes {
@@ -64,7 +64,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
-    implementation("com.github.skydoves:powerspinner:1.2.6")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
